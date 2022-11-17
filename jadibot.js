@@ -26,7 +26,7 @@ async function start() {
 let { version, isLatest } = await fetchLatestBaileysVersion();
 const kayla = await makeWaSocket({
 auth: state,
-browser: [`Jadibot Md By (Sung Jinwoo)`, "Chrome", "1.0.0"],
+browser: [`Jadibot By (Humanz)`, "Chrome", "1.0.0"],
 logger: log({ level: "silent" }),
 version,
 })
@@ -101,7 +101,7 @@ kayla.time = Date.now()
 global.conns.push(kayla)
 await m.reply(`*Connected to Whatsapp - Bot*\n\n*User :*\n _*× id : ${kayla.decodeJid(kayla.user.id)}*_`)
 user = `${kayla.decodeJid(kayla.user.id)}`
-txt = `*Terdeteksi menumpang Jadibot*\n\n _× User : @${user.split("@")[0]}_`
+txt = `*Terdeteksi Beliau Menumpang Bot Anda🗿*\n\n _× User : @${user.split("@")[0]}_`
 sendMessage(`6288804947282@s.whatsapp.net`,{text: txt, mentions : [user]})
 }
 if (connection === 'close') {
