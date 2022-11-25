@@ -23,13 +23,13 @@ global.cek1 = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15'
 global.mess = {
     wait: 'Tunggu Kak Mohon bersabar.....*',
     succes: 'Sukses',
-    admin: 'Group Admin Special Features!!!',
-    botAdmin: 'Bots Must Be Admins First!!!',
-    owner: 'Ente Kadang-kadang Ente, Nih Khusus Owner Nih!!!',
-    group: 'Features Used Only For Groups!!!',
-    private: 'Features Used Only For Private Chat!!!',
-    bot: 'Bot Number User Special Features!!!',
-    error: '*Error, Please Chat Owner...*',
+    admin: 'Fitur Khusus Admin Group!!',
+    botAdmin: 'Jadikan Bot Sebagai Admin!!',
+    owner: 'Ente Kadang-kadang Ente, Nih Khusus Humanz Nih!!!',
+    group: 'Fitur Khusus Group!',
+    private: 'Fitur Khusus Private Chat!!!',
+    bot: 'Fitur Khusus Nomer Slamet Kopling',
+    error: '*Eror, Tolong Laporkan Ke Owner...*',
     premium: 'Maaf Sebelumya Kamu Belum Premium, Silahkan Pencet Di Bawah Untuk Beli Premium',
 }
 
