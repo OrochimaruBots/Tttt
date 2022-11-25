@@ -1034,6 +1034,7 @@ mentionedJid:[sender],
 "sourceUrl": 'https://chat.whatsapp.com/CswK4kvQD1u7SfSmsYfMHZ'
 }
 }
+})
 break
 case 'jadibotmenu':
 sendKaylaMessage(from, { 
