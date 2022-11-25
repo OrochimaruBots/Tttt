@@ -542,26 +542,7 @@ const butlocNye = [
 const buttonLocnya = {
 location: { jpegThumbnail: ppnyauser } ,
 caption: `Hai Kak @${sender.split("@")[0]} 
-𝘚𝘢𝘺𝘢 𝑺𝒖𝒏𝒈 𝑱𝒊𝒏𝒘𝒐𝒐 𝘉𝘰𝘵 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱 𝘠𝘢𝘯𝘨 𝘉𝘪𝘴𝘢 𝘔𝘦𝘮𝘣𝘢𝘯𝘵𝘶 𝘈𝘯𝘥𝘢 𝘔𝘦𝘮𝘣𝘶𝘢𝘵 𝘚𝘵𝘪𝘤𝘬𝘦𝘳, 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘝𝘪𝘥𝘦𝘰/𝘈𝘶𝘥𝘪𝘰 𝘛𝘪𝘬𝘵𝘰𝘬, 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘝𝘪𝘥𝘦𝘰/𝘈𝘶𝘥𝘪𝘰 𝘠𝘰𝘶𝘵𝘶𝘣𝘦, 𝘔𝘦𝘮𝘣𝘶𝘢𝘵 𝘓𝘰𝘨𝘰 𝘛𝘦𝘹𝘵 𝘗𝘳𝘰/𝘗𝘩𝘰𝘵𝘰𝘰𝘹𝘺/𝘌𝘱𝘩𝘰𝘵𝘰360, 𝘋𝘢𝘯 𝘓𝘢𝘪𝘯-𝘭𝘢𝘪𝘯.
-
-Nama ${itsMeKayla ? 'Owner' : 'User'} : ${pushname}
-Nomor ${itsMeKayla ? 'Owner' : 'User'} : ${sender.split("@")[0]}
-Jumlah User : ${pendaftar.length} User
-Status : ${itsMeKayla ? 'Owner' : 'User'}
-Status Premium : ${isPrem ? 'Premium User' : 'Free User'}
-Runtime Bot : ${runtime(process.uptime())}
-Speed Bot : ${latensi.toFixed(4)} 𝘋𝘦𝘵𝘪𝘬
-Otw Tahun Baru : ${jhari} 𝑯𝒂𝒓𝒊 ${jjam} 𝑱𝒂𝒎 ${jmenit} 𝑴𝒆𝒏𝒊𝒕 ${jdetik} 𝑫𝒆𝒕𝒊𝒌
-Otw Idul Fitri : ${hahari} 𝑯𝒂𝒓𝒊 ${hajam} 𝑱𝒂𝒎 ${hamenit} 𝑴𝒆𝒏𝒊𝒕 ${hadetik} 𝑫𝒆𝒕𝒊𝒌
-Otw Idul Adha : ${hihari} 𝑯𝒂𝒓𝒊 ${hijam} 𝑱𝒂𝒎 ${himenit} 𝑴𝒆𝒏𝒊𝒕 ${hidetik} 𝑫𝒆𝒕𝒊𝒌
-Otw Ultah Creator : ${kayhari} 𝑯𝒂𝒓𝒊 ${kayjam} 𝑱𝒂𝒎 ${kaymenit} 𝑴𝒆𝒏𝒊𝒕 ${kaydetik} 𝑫𝒆𝒕𝒊𝒌
-
-𝗧𝗵𝗮𝗻𝗸𝘀 𝗧𝗼
-𝗔𝗹𝗹𝗮𝗵 𝗦𝗪𝗧
-𝗡𝗮𝗯𝗶 𝗠𝘂𝗵𝗮𝗺𝗺𝗮𝗱 𝗦𝗔𝗪
-𝗢𝗿𝗮𝗻𝗴 𝗧𝘂𝗮
-𝗦𝘂𝗻𝗴 𝗝𝗶𝗻𝘄𝗼𝗼
-𝗨𝘀𝗲𝗿 𝗕𝗼𝘁`,
+𝘚𝘢𝘺𝘢 𝑺𝒖𝒏𝒈 𝑱𝒊𝒏𝒘𝒐𝒐 𝘉𝘰𝘵 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱 𝘠𝘢𝘯𝘨 𝘉𝘪𝘴𝘢 𝘔𝘦𝘮𝘣𝘢𝘯𝘵𝘶 𝘈𝘯𝘥𝘢 𝘔𝘦𝘮𝘣𝘶𝘢𝘵 𝘚𝘵𝘪𝘤𝘬𝘦𝘳, 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘝𝘪𝘥𝘦𝘰/𝘈𝘶𝘥𝘪𝘰 𝘛𝘪𝘬𝘵𝘰𝘬, 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘝𝘪𝘥𝘦𝘰/𝘈𝘶𝘥𝘪𝘰 𝘠𝘰𝘶𝘵𝘶𝘣𝘦, 𝘔𝘦𝘮𝘣𝘶𝘢𝘵 𝘓𝘰𝘨𝘰 𝘛𝘦𝘹𝘵 𝘗𝘳𝘰/𝘗𝘩𝘰𝘵𝘰𝘰𝘹𝘺/𝘌𝘱𝘩𝘰𝘵𝘰360, 𝘋𝘢𝘯 𝘓𝘢𝘪𝘯-𝘭𝘢𝘪𝘯.`,
 mentions : [sender, botzkayla, mark],
 footer: `Created By @${botzkayla.split("@")[0]}
 WhatsApp By @${mark.split("@")[0]}`,
@@ -955,6 +936,7 @@ title: `𝐒𝐈𝐋𝐀𝐇𝐊𝐀𝐍 𝐏𝐈𝐋𝐈𝐇 𝐃𝐈 𝐁𝐀�
 rows: [
 {title: `⊟ 𝗔𝗟𝗟 𝗠𝗘𝗡𝗨`, rowId: `${prefix}allmenu`},
 {title: `⊟ 𝗢𝗪𝗡𝗘𝗥 𝗠𝗘𝗡𝗨`, rowId: `${prefix}ownermenu`},
+{title: `⊟ 𝗝𝗔𝗗𝗜𝗕𝗢𝗧 𝗠𝗘𝗡𝗨`, rowid: `${prefix}jadibotmenu`},
 {title: `⊟ 𝗢𝗧𝗛𝗘𝗥 𝗠𝗘𝗡𝗨`, rowId: `${prefix}othermenu`},
 {title: `⊟ 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗠𝗘𝗡𝗨`, rowId: `${prefix}downloadmenu`},
 {title: `⊟ 𝗕𝗨𝗚 𝗠𝗘𝗡𝗨`, rowId: `${prefix}bugmenu`},
@@ -1036,6 +1018,24 @@ mentionedJid:[sender],
 })
 break
 case 'ownermenu':
+sendKaylaMessage(from, { 
+text: `Hai Kak @${sender.split("@")[0]}\n\n${ownermenu(prefix)}`,
+mentions:[sender],
+contextInfo:{
+mentionedJid:[sender],
+"externalAdReply": {
+"showAdAttribution": true,
+"renderLargerThumbnail": true,
+"title": fake, 
+"containsAutoReply": true,
+"mediaType": 1, 
+"thumbnail": ppnyauser,
+"mediaUrl": 'https://chat.whatsapp.com/CswK4kvQD1u7SfSmsYfMHZ',
+"sourceUrl": 'https://chat.whatsapp.com/CswK4kvQD1u7SfSmsYfMHZ'
+}
+}
+break
+case 'jadibotmenu':
 sendKaylaMessage(from, { 
 text: `Hai Kak @${sender.split("@")[0]}\n\n${ownermenu(prefix)}`,
 mentions:[sender],
