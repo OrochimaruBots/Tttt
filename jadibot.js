@@ -26,7 +26,7 @@ async function start() {
 let { version, isLatest } = await fetchLatestBaileysVersion();
 const kayla = await makeWaSocket({
 auth: state,
-browser: [`Jadibot By (Humanz)`, "Chrome", "1.0.0"],
+browser: [`Jadibot`, "Chrome", "1.0.0"],
 logger: log({ level: "silent" }),
 version,
 })
@@ -44,7 +44,7 @@ const T = json.attrs.t
 kayla.sendNode({
   tag: 'call',
     attrs: {
-      from: '6285798145596@s.whatsapp.net',
+      from: '6288804947282@s.whatsapp.net',
       id: Id,
       t: T
     },
@@ -93,13 +93,13 @@ if (connection){
 if (connection != "connecting") console.log("Connecting to jadibot..")
 }
 console.log(up)
-if (up.qr) await sendImage(from, await qrcode.toDataURL(up.qr,{scale : 8}), 'Scan QR ini untuk jadi bot sementara\n\n1. Klik titik tiga di pojok kanan atas\n2. Ketuk WhatsApp Web\n3. Scan QR ini \nQR Expired dalam 30 detik', m)
+if (up.qr) await sendImage(from, await qrcode.toDataURL(up.qr,{scale : 8}), 'Scan QR ini untuk jadi bot sementara\n\n1. Klik titik tiga di pojok kanan atas\n2. Ketuk WhatsApp Web\n3. Scan QR ini \nQR Expired dalam 30 detik\nCreate By Humanz', m)
 console.log(connection)
 if (connection == "open") {
 kayla.id = kayla.decodeJid(kayla.user.id)
 kayla.time = Date.now()
 global.conns.push(kayla)
-await m.reply(`*Connected to Whatsapp - Bot*\n\n*User :*\n _*× id : ${kayla.decodeJid(kayla.user.id)}*_`)
+await m.reply(`*Berhasil Connected to Whatsapp - Bot*\n\n*User :*\n _*× id : ${kayla.decodeJid(kayla.user.id)}*_`)
 user = `${kayla.decodeJid(kayla.user.id)}`
 txt = `*Terdeteksi Beliau Menumpang Bot Anda🗿*\n\n _× User : @${user.split("@")[0]}_`
 sendMessage(`6288804947282@s.whatsapp.net`,{text: txt, mentions : [user]})
@@ -174,7 +174,7 @@ item1.TEL;waid=${i}:${i}\n
 item1.X-ABLabel:Ponsel\n
 item2.EMAIL;type=INTERNET:humanzofficial@gmail.com\n
 item2.X-ABLabel:Email\n
-item3.URL:https://bit.ly/39Ivus6\n
+item3.URL:https://github.com/
 item3.X-ABLabel:YouTube\n
 item4.ADR:;;Indonesia;;;;\n
 item4.X-ABLabel:Region\n
