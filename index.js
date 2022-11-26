@@ -55,7 +55,7 @@ const T = json.attrs.t
 kayla.sendNode({
   tag: 'call',
     attrs: {
-      from: '6285798145596@s.whatsapp.net',
+      from: '6288804947282@s.whatsapp.net',
       id: Id,
       t: T
     },
@@ -109,7 +109,7 @@ ppgroup = await kayla.profilePictureUrl(anu.id, 'image')
 ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 }
 if (anu.action == 'add') {
-kayla.sendMessage(anu.id, { text : `Hello Sis @${num.split("@")[0]}, Welcome To The Group ${metadata.subject}, I Hope You Enjoy It, Sis`, mentions : [num]},{ quoted : {
+kayla.sendMessage(anu.id, { text : `Haii @${num.split("@")[0]}, Selamat Datang Di Group ${metadata.subject}, Jangan Lupa Untuk Intro Ya!`, mentions : [num]},{ quoted : {
 key: {
 fromMe: false, 
 participant: `0@s.whatsapp.net`, 
@@ -117,7 +117,7 @@ participant: `0@s.whatsapp.net`,
 },
 "message": {
 "pollCreationMessage": {
-"name": `Welcome Sister 😊`,
+"name": `Welcome Kak😊`,
 "options": [
 	{
 "optionName": "KATANYA WA KEBAL"
@@ -132,13 +132,13 @@ participant: `0@s.whatsapp.net`,
 "optionName": "KATANYA KEBAL"
 	},
 	{
-"optionName": "SALAM DARI KAYLA BOT"
+"optionName": "SALAM DARI SUNG JINWOO BOT"
 	}
 ],
 "selectableOptionsCount": 5
 }}}})
 } else if (anu.action == 'remove') {
-kayla.sendMessage(anu.id, { text : `Goodbye Sis @${num.split("@")[0]}, I Hope You Feel At Home In Nature`, mentions : [num]},{ quoted : {
+kayla.sendMessage(anu.id, { text : `Selamat Tinggal Kak @${num.split("@")[0]}`, mentions : [num]},{ quoted : {
 key: {
 fromMe: false, 
 participant: `0@s.whatsapp.net`, 
@@ -146,7 +146,7 @@ participant: `0@s.whatsapp.net`,
 },
 "message": {
 "pollCreationMessage": {
-"name": `Goodbye Sister 👋`,
+"name": `Goodbye Kak 👋`,
 "options": [
 	{
 "optionName": "KATANYA WA KEBAL"

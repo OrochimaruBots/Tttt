@@ -174,7 +174,7 @@ var mde = ['red','green','yellow','blue','magenta','cyan','white']
 var halale = mde[Math.floor(Math.random() * mde.length)]
 
 if (isCmd) {
-console.log(chalk.yellow.bgCyan.bold(' - 𝙺𝚊𝚢𝚕𝚊 𝙱𝚘𝚝 '), color(`[ PESAN ]`, `${halalu}`), color(`FROM`, `${halalo}`), color(`${pushname}`, `${halali}`), color(`Text :`, `${halala}`), color(`${body}`, `${halale}`))
+console.log(chalk.yellow.bgCyan.bold(' Slamet Kopling '), color(`[ PESAN ]`, `${halalu}`), color(`FROM`, `${halalo}`), color(`${pushname}`, `${halali}`), color(`Text :`, `${halala}`), color(`${body}`, `${halale}`))
 }
 
 if (isCmd && !isUser) {
@@ -932,23 +932,23 @@ kayla.sendImage(m.chat, buff, `${getkaydata.response}`, m)
 }
 
 const seactions = [{
-title: `𝐒𝐈𝐋𝐀𝐇𝐊𝐀𝐍 𝐏𝐈𝐋𝐈𝐇 𝐃𝐈 𝐁𝐀𝐖𝐀𝐇`,
+title: `𝐒𝐈𝐋𝐀𝐇𝐊𝐀𝐍 𝐏𝐈𝐋𝐈𝐇 𝗠𝗘𝗡𝗨 𝐃𝐈 𝐁𝐀𝐖𝐀𝐇`,
 rows: [
-{title: `×͜× 𝗔𝗟𝗟 𝗠𝗘𝗡𝗨`, rowId: `${prefix}allmenu`},
-{title: `×͜× 𝗢𝗪𝗡𝗘𝗥 𝗠𝗘𝗡𝗨`, rowId: `${prefix}ownermenu`},
-{title: `×͜× 𝗝𝗔𝗗𝗜𝗕𝗢𝗧 𝗠𝗘𝗡𝗨`, rowid: `${prefix}jadibotmenu`},
-{title: `×͜× 𝗢𝗧𝗛𝗘𝗥 𝗠𝗘𝗡𝗨`, rowId: `${prefix}othermenu`},
-{title: `×͜× 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗠𝗘𝗡𝗨`, rowId: `${prefix}downloadmenu`},
-{title: `×͜× 𝗕𝗨𝗚 𝗠𝗘𝗡𝗨`, rowId: `${prefix}bugmenu`},
-{title: `×͜× 𝗚𝗥𝗢𝗨𝗣 𝗠𝗘𝗡𝗨`, rowId: `${prefix}groupmenu`},
-{title: `×͜× 𝗙𝗨𝗡 𝗠𝗘𝗡𝗨`, rowId: `${prefix}funmenu`},
-{title: `×͜× 𝗦𝗧𝗔𝗟𝗞𝗘𝗥 𝗠𝗘𝗡𝗨`, rowId: `${prefix}stalkermenu`},
-{title: `×͜× 𝗙𝗢𝗧𝗢 𝗠𝗘𝗡𝗨`, rowId: `${prefix}randfotomenu`},
-{title: `×͜× 𝗩𝗜𝗗𝗘𝗢 𝗠𝗘𝗡𝗨`, rowId: `${prefix}randvideomenu`},
-{title: `×͜× 𝗧𝗘𝗫𝗧 𝗣𝗥𝗢 𝗠𝗘𝗡𝗨`, rowId: `${prefix}textpromenu`},
-{title: `×͜× 𝗣𝗛𝗢𝗧𝗢 𝗢𝗫𝗬 𝗠𝗘𝗡𝗨`, rowId: `${prefix}photooxymenu`},
-{title: `×͜× 𝗘𝗣𝗛𝗢𝗧𝗢 𝟯𝟲𝟬 𝗠𝗘𝗡𝗨`, rowId: `${prefix}ephoto360menu`},
-{title: `×͜× 𝗖𝗘𝗥𝗣𝗘𝗡 𝗠𝗘𝗡𝗨`, rowId: `${prefix}cerpenmenu`},
+{title: `×͜× 𝗔𝗟𝗟 𝗠𝗘𝗡𝗨 ×͜×`, rowId: `${prefix}allmenu`},
+{title: `×͜× 𝗢𝗪𝗡𝗘𝗥 𝗠𝗘𝗡𝗨 ×͜×`, rowId: `${prefix}ownermenu`},
+{title: `×͜× 𝗝𝗔𝗗𝗜𝗕𝗢𝗧 𝗠𝗘𝗡𝗨 ×͜×`, rowid: `${prefix}jadibotmenu`},
+{title: `×͜× 𝗢𝗧𝗛𝗘𝗥 𝗠𝗘𝗡𝗨 ×͜×`, rowId: `${prefix}othermenu`},
+{title: `×͜× 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗠𝗘𝗡𝗨 ×͜×`, rowId: `${prefix}downloadmenu`},
+{title: `×͜× 𝗕𝗨𝗚 𝗠𝗘𝗡𝗨 ×͜×`, rowId: `${prefix}bugmenu`},
+{title: `×͜× 𝗚𝗥𝗢𝗨𝗣 𝗠𝗘𝗡𝗨 ×͜×`, rowId: `${prefix}groupmenu`},
+{title: `×͜× 𝗙𝗨𝗡 𝗠𝗘𝗡𝗨 ×͜×`, rowId: `${prefix}funmenu`},
+{title: `×͜× 𝗦𝗧𝗔𝗟𝗞𝗘𝗥 𝗠𝗘𝗡𝗨 ×͜×`, rowId: `${prefix}stalkermenu`},
+{title: `×͜× 𝗙𝗢𝗧𝗢 𝗠𝗘𝗡𝗨 ×͜×`, rowId: `${prefix}randfotomenu`},
+{title: `×͜× 𝗩𝗜𝗗𝗘𝗢 𝗠𝗘𝗡𝗨 ×͜×`, rowId: `${prefix}randvideomenu`},
+{title: `×͜× 𝗧𝗘𝗫𝗧 𝗣𝗥𝗢 𝗠𝗘𝗡𝗨 ×͜×`, rowId: `${prefix}textpromenu`},
+{title: `×͜× 𝗣𝗛𝗢𝗧𝗢 𝗢𝗫𝗬 𝗠𝗘𝗡𝗨 ×͜×`, rowId: `${prefix}photooxymenu`},
+{title: `×͜× 𝗘𝗣𝗛𝗢𝗧𝗢 𝟯𝟲𝟬 𝗠𝗘𝗡𝗨 ×͜×`, rowId: `${prefix}ephoto360menu`},
+{title: `×͜× 𝗖𝗘𝗥𝗣𝗘𝗡 𝗠𝗘𝗡𝗨 ×͜×`, rowId: `${prefix}cerpenmenu`},
 ]}]
 const listMenuMessage = { 
 text: `Silahkan Kak @${sender.split("@")[0]} Pencet Button List Message Nya Di Bawah Ya`,
@@ -961,7 +961,6 @@ listType: 1}
 switch (command) {
 case 'jadibot': {
 if (m.isGroup) return reply(mess.private)
-if (!isPrem) return replyprem(mess.premium)
 jadibot(kayla, m, from)
 }
 break
@@ -990,7 +989,7 @@ const repf = await kayla.sendMessage(from, {
 contacts: { 
 displayName: `${list.length} Kontak`, 
 contacts: list }, mentions: [sender] }, { quoted: m })
-kayla.sendMessage(from, { text : `Hai Kak @${sender.split("@")[0]}, Nih Owner Ku Tolong Jangan Di Spam Ya×͜×`, mentions: [sender]}, { quoted: repf })
+kayla.sendMessage(from, { text : `Hai Kak @${sender.split("@")[0]}, Nih Owner Ku Tolong Jangan Di Spam Ya •́  ‿ ,•̀`, mentions: [sender]}, { quoted: repf })
 }
 break
 case 'menu':{
@@ -1587,7 +1586,7 @@ Kamu Bisa Menggunakan Bot Ini
 Contoh Penggunaan: ${prefix+command} nomor|pesan untuknya
 
 Contoh: ${prefix+command} 628xxxxxxxx|hai owner`, m)
-await kayla.sendMessage(num, {text:`𝘈𝘯𝘥𝘢 𝘑𝘶𝘨𝘢 𝘉𝘪𝘴𝘢 𝘔𝘦𝘮𝘣𝘢𝘭𝘢𝘴 𝘗𝘦𝘴𝘢𝘯 𝘕𝘺𝘢 𝘋𝘦𝘯𝘨𝘢𝘯 𝘊𝘢𝘳𝘢 𝘔𝘦𝘯𝘨𝘪𝘳𝘪𝘮 𝘗𝘦𝘴𝘢𝘯, 𝘑𝘪𝘬𝘢 𝘈𝘯𝘥𝘢 𝘛𝘪𝘥𝘢𝘬 𝘔𝘢𝘶 𝘔𝘦𝘮𝘣𝘢𝘭𝘢𝘴 𝘕𝘺𝘢 𝘗𝘦𝘯𝘤𝘦𝘵 𝘉𝘶𝘵𝘵𝘰𝘯 𝘽𝙞𝙖𝙧𝙞𝙣 𝘋𝘪 𝘈𝘵𝘢𝘴 𝘠𝘢𝘩 𝘔𝘢𝘬𝘢𝘴𝘪𝘩`}, { quoted : m })
+await kayla.sendMessage(num, {text:`𝘈𝘯𝘥𝘢 𝘑𝘶𝘨𝘢 𝘉𝘪𝘴𝘢 𝘔𝘦𝘮𝘣𝘢𝘭𝘢𝘴 𝘗𝘦𝘴𝘢𝘯 𝘕𝘺𝘢 𝘋𝘦𝘯g𝘢𝘯 𝘊𝘢𝘳𝘢 𝘔𝘦𝘯𝘨𝘪𝘳𝘪𝘮 𝘗𝘦𝘴𝘢𝘯, 𝘑𝘪𝘬𝘢 𝘈𝘯𝘥𝘢 𝘛𝘪𝘥𝘢𝘬 𝘔𝘢𝘶 𝘔𝘦𝘮𝘣𝘢𝘭𝘢𝘴 𝘕𝘺𝘢 𝘗𝘦𝘯𝘤𝘦𝘵 𝘉𝘶𝘵𝘵𝘰𝘯 𝘽𝙞𝙖𝙧𝙞𝙣 𝘋𝘪 𝘈𝘵𝘢𝘴 𝘠𝘢𝘩 𝘔𝘢𝘬𝘢𝘴𝘪𝘩`}, { quoted : m })
 lidt = `Sukses Mengirim Pesan
 👤 Dari : wa.me/${nomor.split("@s.whatsapp.net")[0]}
 👥 Ke : wa.me/${q.split("|")[0].replace(/[^0-9]/g, '')}
@@ -1795,7 +1794,7 @@ kayla.sendMessage(m.chat,{audio:{url: tytyd.media[2].url}, mimetype: "audio/mp4"
 }
 break
 case 'google': {
-if (!q) return reply(`Example : ${prefix + command} KirBotz WhatsApp`)
+if (!q) return reply(`Example : ${prefix + command} Humanz BotWhatsApp`)
 reply(mess.wait)
 let google = require('google-it')
 google({'query': text}).then(res => {
@@ -1955,28 +1954,28 @@ const seactiones = [
 {
 title: `LIST SEWABOT`,
 rows: [
-{title: `1 MINGGU`, rowId: `${prefix}sewakay 1minggu`},
-{title: `1 BULAN`, rowId: `${prefix}sewakay 1bulan`},
-{title: `1 TAHUN`, rowId: `${prefix}sewakay 1tahun`},
-{title: `PERMANENT`, rowId: `${prefix}sewakay permanent`},
+{title: `1 MINGGU`, rowId: `${prefix}sewasung 1minggu`},
+{title: `1 BULAN`, rowId: `${prefix}sewasung 1bulan`},
+{title: `1 TAHUN`, rowId: `${prefix}sewasung 1tahun`},
+{title: `PERMANENT`, rowId: `${prefix}sewasung permanent`},
 ]
 },
 {
 title: `LIST PREMIUM`,
 rows: [
-{title: `1 MINGGU`, rowId: `${prefix}premkay 1minggu`},
-{title: `1 BULAN`, rowId: `${prefix}premkay 1bulan`},
-{title: `1 TAHUN`, rowId: `${prefix}premkay 1tahun`},
-{title: `PERMANENT`, rowId: `${prefix}premkay permanent`},
+{title: `1 MINGGU`, rowId: `${prefix}premsung 1minggu`},
+{title: `1 BULAN`, rowId: `${prefix}premsung 1bulan`},
+{title: `1 TAHUN`, rowId: `${prefix}premsung 1tahun`},
+{title: `PERMANENT`, rowId: `${prefix}premsung permanent`},
 ]
 },
 {
 title: `LIST JADI OWNER`,
 rows: [
-{title: `1 MINGGU`, rowId: `${prefix}ownkay 1minggu`},
-{title: `1 BULAN`, rowId: `${prefix}ownkay 1bulan`},
-{title: `1 TAHUN`, rowId: `${prefix}ownkay 1tahun`},
-{title: `PERMANENT`, rowId: `${prefix}ownkay permanent`},
+{title: `1 MINGGU`, rowId: `${prefix}ownsung 1minggu`},
+{title: `1 BULAN`, rowId: `${prefix}ownsung 1bulan`},
+{title: `1 TAHUN`, rowId: `${prefix}ownsung 1tahun`},
+{title: `PERMANENT`, rowId: `${prefix}ownsung permanent`},
 ]
 }
 ]
