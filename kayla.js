@@ -1602,9 +1602,10 @@ teks += `â¬¡ *Nama :* ${nama}\nâ¬¡ *User :* @${i.split('@')[0]}\nâ¬¡ *C
  }
  kayla.sendTextWithMentions(m.chat, teks, m)
  }
+ }
  break 
  case 'listgc': {
-  if (!isOwner) return reply(mess.owner)
+ if (!isOwner) return reply(mess.owner)
  let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
  let teks = `â¬£ *LIST GROUP CHAT*\n\nTotal Group : ${anu.length} Group\n\n`
  for (let i of anu) {
@@ -1612,6 +1613,7 @@ let metadata = await kayla.groupMetadata(i)
 teks += `â¬¡ *Nama :* ${metadata.subject}\nâ¬¡ *Owner :* @${metadata.owner.split('@')[0]}\nâ¬¡ *ID :* ${metadata.id}\nâ¬¡ *Dibuat :* ${moment(metadata.creation * 1000).tz('Asia/Jakarta').format('DD/MM/YYYY HH:mm:ss')}\nâ¬¡ *Member :* ${metadata.participants.length}\n\n=====================\n\n`
  }
  kayla.sendTextWithMentions(m.chat, teks, m)
+ }
  }
 break
 case 'menfes': case 'confes':
