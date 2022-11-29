@@ -1525,6 +1525,8 @@ reply(mess.wait)
 fdy = await fetchJson(`https://kirbotz-api.herokuapp.com/api/random/asupan/${command}?apikey=KirBotz`)
 kayla.sendMessage(m.chat, { video : { url: fdy.result.url }, caption: `${mess.succes}` }, { quoted: m })
 }
+}
+break
 case 'ping': case 'botstatus': case 'statusbot': {
   if (!isRegister) return reply(blomdaftar) & sendButMessage (sender, daftar1, daftar2, daftar3, { quoted: m}) 
     if (isBan) return reply(mess.banned)
@@ -1573,6 +1575,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 `.trim()
 reply(respon)
 }
+}
 break
 case 'hentaivid': {
 if (!isPrem) return replyprem(mess.premium)
@@ -1588,6 +1591,28 @@ caption: `⭔ Title : ${cejd.title}
 ⭔ Source : ${cejd.link}
 ⭔ Media Url : ${cejd.video_1}` }, { quoted: m })
 }
+break
+case 'listpc': {
+ if (!isOwner) return reply(mess.owner)
+ let anu = await store.chats.all().filter(v => v.id.endsWith('.net')).map(v => v.id)
+ let teks = `â¬£ *LIST PERSONAL CHAT*\n\nTotal Chat : ${anu.length} Chat\n\n`
+ for (let i of anu) {
+let nama = store.messages[i].array[0].pushName
+teks += `â¬¡ *Nama :* ${nama}\nâ¬¡ *User :* @${i.split('@')[0]}\nâ¬¡ *Chat :* https://wa.me/${i.split('@')[0]}\n\n=====================\n\n`
+ }
+ kayla.sendTextWithMentions(m.chat, teks, m)
+ }
+ break 
+ case 'listgc': {
+  if (!isOwner) return reply(mess.owner)
+ let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
+ let teks = `â¬£ *LIST GROUP CHAT*\n\nTotal Group : ${anu.length} Group\n\n`
+ for (let i of anu) {
+let metadata = await kayla.groupMetadata(i)
+teks += `â¬¡ *Nama :* ${metadata.subject}\nâ¬¡ *Owner :* @${metadata.owner.split('@')[0]}\nâ¬¡ *ID :* ${metadata.id}\nâ¬¡ *Dibuat :* ${moment(metadata.creation * 1000).tz('Asia/Jakarta').format('DD/MM/YYYY HH:mm:ss')}\nâ¬¡ *Member :* ${metadata.participants.length}\n\n=====================\n\n`
+ }
+ kayla.sendTextWithMentions(m.chat, teks, m)
+ }
 break
 case 'menfes': case 'confes':
 if (Object.values(anon.anonymous).find(p => p.check(sender))) return reply("Anda masih didalam room")
