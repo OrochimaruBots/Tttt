@@ -1603,7 +1603,7 @@ teks += `â¬¡ *Nama :* ${nama}\nâ¬¡ *User :* @${i.split('@')[0]}\nâ¬¡ *C
  kayla.sendTextWithMentions(m.chat, teks, m)
  }
  }
- break 
+break 
  case 'listgc': {
  if (!isOwner) return reply(mess.owner)
  let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
