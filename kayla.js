@@ -1080,11 +1080,7 @@ ${hituet+=1} ${prefix}igstalk 🅟
 ${hituet+=1} ${prefix}ffstalk 🅟
 ${hituet+=1} ${prefix}mlstalk 🅟
 ${hituet+=1} ${prefix}npmstalk 🅟
-${hituet+=1} ${prefix}ghstalk 🅟
-
-    Thanks To
-Humanz
-Kirbotz `,
+${hituet+=1} ${prefix}ghstalk 🅟`,
 mentions : [sender, botzkayla, mark],
 footer: `Created By @${botzkayla.split("@")[0]}
 WhatsApp By @${mark.split("@")[0]}`,
@@ -1503,7 +1499,7 @@ const repf = await kayla.sendMessage(from, {
 contacts: { 
 displayName: `${list.length} Kontak`, 
 contacts: list }, mentions: [sender] }, { quoted: m })
-kayla.sendMessage(from, { text : `Hai @${sender.split("@")[0]}, Nih Owner Ku ◉‿◉`, mentions: [sender]}, { quoted: repf })
+kayla.sendMessage(from, { text : `Hai @${sender.split("@")[0]},Ini Adalah Kontak Nomer Ownerku\Owner Tidak Akan Menerima Permintaan Save Kecuali Untuk Cewek\nDi Harap Untuk Tidak Meminta Sc\nOwner Akan Merespon Soal Masalah Bot Atau Request Fitur`\nSekian Dan Terimakasih🙏🏼, mentions: [sender]}, { quoted: repf })
 }
 break
 case 'menu':{
@@ -1811,7 +1807,7 @@ kayla.sendMessage(from, {text: `Nih Kak @${teman.split("@")[0]}`, mentions: [tem
 }, 9000)
 break
 case 'sc': case 'scriptbot': case 'scbot':{
-kayla.sendMessage(m.chat,{text:`Mau Script Bot Nya? Silahkan Chat Aja @${creator.split("@")[0]}`,mentions: [creator], },{quoted:m})
+kayla.sendMessage(m.chat,{text:`Panjenengan Mau Script Dari Bot Ini? Silahkan Buy Kalo Mau Mendapatkan Script Bot Ini, Kalo Mau Gratis Cri Aja Di yete, Nomer Owner @${creator.split("@")[0]}`,mentions: [creator], },{quoted:m})
 }
 break
 case 'q': case 'quoted': {
@@ -1996,6 +1992,19 @@ ${q}`})
 }
 reply(`Succes`)
 break
+case 'bcgc': case 'bcgroup': {
+if (!isCreator) throw mess.owner
+if (!text) throw `Text mana?\n\nExample : ${prefix + command} fatih-san`
+let getGroups = await kayla.groupFetchAllParticipating()
+let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
+let anu = groups.map(v => v.id)
+m.reply(`Mengirim Broadcast Ke ${anu.length} Group Chat, Waktu Selesai ${anu.length * 1.5} detik`)
+for (let i of anu) {
+await sleep(1500)
+let txt = `ã€Œ *Sung Jinwoo Broadcast Group* ã€\n\n${text}`
+let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: 'â¬…ï¸Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: 'ðŸ“–List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'ðŸ™Donasi' }, type: 1 }]
+await kayla.sendButtonText(m.chat, buttons, txt, nyoutube, m)
+}
 case 'ban':{
 if (!itsMeKayla) return reply(mess.owner)
 if (!q) return reply(`Penggunaan ${prefix+command} add/del nomor\nContoh ${prefix+command} add/del 6287705048235`)
@@ -2187,7 +2196,28 @@ let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsap
 await kayla.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 }
 break
+case 'setdesc': case 'setdesk': {
+if (!m.isGroup) throw mess.group
+if (!isBotAdmins) throw mess.botAdmin
+if (!isAdmins) throw mess.admin
+if (!text) throw 'Text ?'
+await kayla.groupUpdateDescription(m.chat, text).then((res) => m.reply(mess.success)).catch((err) => m.reply(jsonformat(err)))
+break
+case 'listgc': {
+let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
+let teks = `â¬£ *LIST GROUP CHAT*\n\nTotal Group : ${anu.length} Group\n\n
+for (let i of anu) {
+let metadata = await kayla.groupMetadata(i)
+teks += `â¬¡ *Nama :* ${metadata.subject}\nâ¬¡ *Owner :* ${metadata.owner !== undefined ? '@' + metadata.owner.split`@`[0] : 'Tidak diketahui'}\nâ¬¡ *ID :* ${metadata.id}\nâ¬¡ *Dibuat :* ${moment(metadata.creation * 1000).tz('Asia/Jakarta').format('DD/MM/YYYY HH:mm:ss')}\nâ¬¡ *Member :* ${metadata.participants.length}\n\nâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€\n\n`
+}
+kayla.sendTextWithMentions(m.chat, teks, m)
+break
+case 'listonline': case 'liston': {
+let id = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : m.chat
+let online = [...Object.keys(store.presences[id]), botNumber]
+kayla.sendText(m.chat, 'List Online:\n\n' + online.map(v => 'â­” @' + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
 case 'closetime':
+break
 if (!m.isGroup) return reply(mess.group)
 if (!isAdmins && !itsMeKayla) return reply(mess.admin)
 if (!isBotAdmins) return reply(mess.botAdmin)
@@ -2957,6 +2987,18 @@ reply(`Kirim/Reply Gambar/Video/Gifs Dengan Caption ${prefix+command}\nDurasi Vi
 }
 }
 break
+case 'emojimix':{
+let [emoji1, emoji2] = text.split`+`
+if (!emoji1) throw `Example : ${prefix + command} ðŸ˜…+ðŸ¤”`
+if (!emoji2) throw `Example : ${prefix + command} ðŸ˜…+ðŸ¤”`
+let anu = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(emoji1)}_${encodeURIComponent(emoji2)}`)
+for (let res of anu.results) {
+let encmedia = await kayla.sendImageAsSticker(m.chat, res.url, m, { packname: global.packname, author: global.author, categories: res.tags })
+await fs.unlinkSync(encmedia)
+break
+case 'attp': case 'ttp': {
+if (!text) throw `Example : ${prefix + command} text`
+await kayla.sendMedia(m.chat, `https://xteam.xyz/${command}?file&text=${text}`, 'humanz', 'morou', m, {asSticker: true})
 case 'memek':
 case 'bego':
 case 'goblok':
